@@ -40,6 +40,7 @@ class Produk extends BaseController
     }
 
     public function newTest() {
-        
+        $haidar = ["Myname"];
+        echo $haidar[0];
     }
 }
