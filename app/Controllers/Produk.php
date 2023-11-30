@@ -34,11 +34,14 @@ class Produk extends BaseController
         echo $slugProduk;
     }
 
-    public function test() {
+    public function test()
+    {
         echo "Pinjem dulu seratus!";
     }
 
-    /**
-     * This is a comment
-     */
+    public function testOne()
+    {
+        echo "Tolong Pinjem dulu seratus!";
+    }
+
 }
