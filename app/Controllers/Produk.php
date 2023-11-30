@@ -40,6 +40,6 @@ class Produk extends BaseController
     }
 
     public function newTest() {
-        
+        echo "commit new version!";
     }
 }
