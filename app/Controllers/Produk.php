@@ -37,4 +37,8 @@ class Produk extends BaseController
     public function test() {
         echo "Pinjem dulu seratus!";
     }
+
+    function arrow (){
+        echo "Hello Dicoding!!!";
+    }
 }
