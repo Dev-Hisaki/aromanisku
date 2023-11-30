@@ -41,5 +41,7 @@ class Produk extends BaseController
 
     public function newTest() {
         echo "commit new version!";
+        $haidar = ["Myname"];
+        echo $haidar[0];
     }
 }
