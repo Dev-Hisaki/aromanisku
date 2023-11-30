@@ -38,10 +38,14 @@ class Produk extends BaseController
     {
         echo "Pinjem dulu seratus!";
     }
+<<<<<<< HEAD
 
-    public function testOne()
+    function arrow()
     {
-        echo "Tolong Pinjem dulu seratus!";
+        echo "Hello Dicoding!!!";
+        echo "Haidar";
     }
-
 }
+=======
+}
+>>>>>>> acf45b117a6531cacb1a6d329ec43281e49c7dec
