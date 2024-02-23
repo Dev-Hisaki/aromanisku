@@ -1,0 +1,15 @@
+Access Modifier :
+- private
+Akses hanya di dalam fungsi
+
+- default
+bisa diakses selama dalam satu package
+
+- protected
+bisa diakses selama dalam satu package kecuali oleh turunannya
+
+Non-Access Modifier
+- static
+- final
+- transient
+- synchronized

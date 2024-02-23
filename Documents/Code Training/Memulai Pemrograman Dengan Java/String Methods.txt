@@ -1,0 +1,16 @@
+Dicoding String Methods :
+length()
+charAt(int index)
+format(String format, Object..., args)
+substrng(int beginIndex)
+constains(Object object)	// is object ada String?
+equals(Object object)		// is String == object?
+isEmpty()
+concat(String s)
+replace(char a, char b)
+indexOf(String a)
+toLowerCase()
+toUpperCase()
+trim()				// Menghapus Spasi awal dan akhir
+valueOf(int value)
+compareTo()

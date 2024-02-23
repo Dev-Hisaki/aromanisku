@@ -1,0 +1,6 @@
+Common Class :
+Generic		- String, Integer, Double, Float, user defined, dll
+Exception	- Apabila kode error
+Input Output	- Library untuk proses input dan output
+Date Time	- Library yang khusus untuk waktu
+Casting		- Berfungsi mengubah tipe data atau objek kedalam tipe data atau objek lain

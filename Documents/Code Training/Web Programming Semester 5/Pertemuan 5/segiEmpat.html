@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Hitung Luas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header class="nav-bar">
+        <div class="nav-container">
+            <ul>
+                <li>Home</li>
+                <li>Segi Empat</li>
+                <li>Lingkaran</li>
+            </ul>
+        </div>
+    </header>
+    <section class="content">
+        <div id="container">
+            <h2>Hitung Segi Empat</h2>
+            <label for="panjang">Panjang (cm):</label>
+            <input type="number" id="panjang" placeholder="Panjang">
+            <br>
+            <label for="lebar">Lebar (cm):</label>
+            <input type="number" id="lebar" placeholder="Lebar">
+            <br>
+            <button onclick="hitungSegiEmpat()">Hitung</button>
+            <br>
+            <p>Luas: <span id="luas">0</span></p>
+            <p>Keliling: <span id="keliling">0</span></p>
+        </div>
+    </section>
+
+    <img src="./arisufast.gif" alt="arisufast.gif">
+
+    <footer>
+        <div class="footer-container">
+            <h6>Developed By Muhamad Haidar Al-Farruq (14 Oktober 2023)</h6>
+        </div>
+    </footer>
+
+    <script>
+        hitungSegiEmpat = () => {
+            let panjang = document.getElementById("panjang").value
+            let panjang_float = parseFloat(panjang);
+            let lebar = document.getElementById("lebar").value
+            let lebar_float = parseFloat(lebar);
+
+            if (!isNaN(panjang) && !isNaN(lebar)) {
+                let luas = panjang_float * lebar_float;
+                let keliling = 2 * (panjang_float + lebar_float);
+
+                document.getElementById("luas").textContent = luas.toFixed(2);
+                document.getElementById("keliling").textContent = keliling.toFixed(2);
+            } else {
+                document.getElementById("luas").textContent = "Masukan tidak boleh kosong";
+                document.getElementById("keliling").textContent = "Masukan tidak boleh kosong";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

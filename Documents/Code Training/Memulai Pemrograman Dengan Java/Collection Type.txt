@@ -1,0 +1,4 @@
+Collections :
+List- ArrayList
+Set - List No Duplication
+Map - Objek disimpan dalam sebuah Key (Key - Object)

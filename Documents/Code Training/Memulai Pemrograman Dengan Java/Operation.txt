@@ -1,0 +1,6 @@
+Operation :
+Assignment	// "="
+Arithmetic	// "+", "-", "*", "/", "%"
+Unary		// "+", "-", "++", "--", "!"
+Equality and Relational	// "==", "!=", ">", ">=", "<"
+Conditional	// "&&", "||"

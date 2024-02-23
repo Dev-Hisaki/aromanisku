@@ -1,0 +1,7 @@
+clear;
+t = [0:0.001:1];
+fm = 5;                 % Freq Informasi
+wm = 2 * pi * fm;       % Omega Informasi
+
+fc = 200;               % Freq Carrier
+wc = 2 * pi * fc;       % Omega Carrier

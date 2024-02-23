@@ -1,0 +1,13 @@
+Function :
+Pendeklarasian fungsi
+
+modifier returnType nameofFunction (parameter(s)) {}
+
+Modifier	-	public, private, default, protected
+returnType	-	nilai balik. Ex : void apabila kosong, tipedata apabila ada
+nameofFunction	-	nama fungsi
+parameters	-	parameter
+
+Ex.
+
+Public Void afahiyah(String nama){}

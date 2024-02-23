@@ -1,0 +1,130 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    /* Clipping Background Image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* Smooth Scrolling */
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(./bg-50.png);
+    background-color: #AC90E9;
+    /* Menyembunyikan scrollbar */
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    /* Animasi fade in */
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: #AC90E9;
+    border-radius: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 50vw;
+    height: 50vh;
+    border: 4px solid #BD6ECB;
+    background: #AB8FE8;
+    border-radius: 25px;
+    background-color: #AB8FE8;
+}
+
+.container input {
+    width: 15vh;
+    padding: 5px;
+    border: #FFCCF2;
+    border-radius: 5vh;
+}
+
+.container button {
+    width: 10vh;
+    height: 5vh;
+    border-radius: 50vh;
+}
+
+#result {
+    font-weight: bold;
+}
+
+.nav-bar {
+    background-color: #AC90E9;
+    background: linear-gradient(180deg, #FFCCF2 0%, rgba(255, 204, 242, 0.00) 100%);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: start;
+}
+
+li {
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+    list-style-type: none;
+    margin-inline: 2vh;
+}
+
+input[type="number"] {
+    opacity: 1;
+}
+
+#arisu {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

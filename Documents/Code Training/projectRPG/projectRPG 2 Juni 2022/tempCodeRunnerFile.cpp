@@ -1,0 +1,1 @@
+player.p_attack = 20;

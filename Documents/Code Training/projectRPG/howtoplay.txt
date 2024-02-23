@@ -1,0 +1,11 @@
+____ ___  ___     ____ ____ ___    ____ ____ ____ _    _ _  _ ____ 
+|    |__] |__]    |__| |__/  |     |  | |___ |___ |    | |\ | |___ 
+|___ |    |       |  | |  \  |     |__| |    |    |___ | | \| |___ 
+                                                                                                                        
+How to play :
+
+Select action command below your status
+
+Attack - Do a physcal damage to your enemies
+Skill  - Do a magical damage to your enemies
+Guard  - Reduce your incoming damage

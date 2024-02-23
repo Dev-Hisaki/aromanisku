@@ -1,0 +1,3 @@
+Input, Process, output :
+Input : Bufferedreader, Scanner		// Primitive and String
+Output: Print, Println

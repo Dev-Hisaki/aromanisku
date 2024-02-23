@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Hitung Luas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./icon.ico">
+</head>
+
+<body>
+    <header class="nav-bar">
+        <div class="nav-container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#segi-empat">Segi Empat</a></li>
+                <li><a href="#lingkaran">Lingkaran</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Hitung Luas</h2>
+            <p>
+                Program Hitung Luas adalah program yang berfungsi untuk menghitung luas dan keliling segi empat (persegi
+                dan persegi panjang) dan lingkaran.
+            </p>
+            <p>
+                Program ini menggunakan HTML, CSS, dan JavaScript sebagai landasan dalam membangun website ini.
+            </p>
+        </div>
+    </section>
+
+    <section id="segi-empat">
+        <div class="container">
+            <h2>Hitung Segi Empat</h2>
+            <label for="panjang">Panjang (cm):</label>
+            <input type="number" id="panjang" placeholder="Panjang">
+            <br>
+            <label for="lebar">Lebar (cm):</label>
+            <input type="number" id="lebar" placeholder="Lebar">
+            <br>
+            <button onclick="hitungLuasSegiEmpat()">Hitung</button>
+            <br>
+            <p>Luas: <span id="luas">0</span></p>
+            <p>Keliling: <span id="keliling">0</span></p>
+        </div>
+    </section>
+
+    <section id="lingkaran">
+        <div class="container">
+            <h2>Hitung Lingkaran</h2>
+            <label for="radius">Jari-jari (cm):</label>
+            <input type="number" id="radius" placeholder="Radius">
+            <button onclick="hitungLingkaran()">Hitung</button>
+            <br>
+            <p>Luas: <span id="luas_lingkaran">0</span></p>
+            <p>Keliling: <span id="keliling_lingkaran">0</span></p>
+        </div>
+    </section>
+
+    <div id="arisu">
+        <a href="https://www.instagram.com/alf.mhaidar/" target="_blank">
+            <img src="./arisufast.gif" alt="arisufast.gif">
+        </a>
+    </div>
+
+    <h6>Developed By Muhamad Haidar Al-Farruq (14 Oktober 2023)</h6>
+
+    <script>
+        // Kalkulasi Segi Empat
+        hitungLuasSegiEmpat = () => {
+            let panjang = document.getElementById("panjang").value
+            let panjang_float = parseFloat(panjang);
+            let lebar = document.getElementById("lebar").value
+            let lebar_float = parseFloat(lebar);
+
+            if (!isNaN(panjang) && !isNaN(lebar)) {
+                let luas = panjang_float * lebar_float;
+                let keliling = 2 * (panjang_float + lebar_float);
+
+                document.getElementById("luas").textContent = luas.toFixed(2);
+                document.getElementById("keliling").textContent = keliling.toFixed(2);
+            } else {
+                document.getElementById("luas").textContent = "Masukan tidak boleh kosong";
+                document.getElementById("keliling").textContent = "Masukan tidak boleh kosong";
+            }
+        }
+
+        // Kalkulasi Lingkaran
+        hitungLingkaran = () => {
+            let radius = document.getElementById("radius").value
+            let radius_float = parseFloat(radius);
+
+            if (!isNaN(radius)) {
+                let luas = Math.PI * radius_float * radius_float;
+                let keliling = 2 * Math.PI * radius_float;
+
+                document.getElementById("luas_lingkaran").textContent = luas.toFixed(2);
+                document.getElementById("keliling_lingkaran").textContent = keliling.toFixed(2);
+            } else {
+                document.getElementById("luas_lingkaran").textContent = "Masukan tidak boleh kosong";
+                document.getElementById("keliling_lingkaran").textContent = "Masukan tidak boleh kosong";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

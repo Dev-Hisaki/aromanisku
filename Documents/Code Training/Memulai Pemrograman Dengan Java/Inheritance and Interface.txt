@@ -1,0 +1,3 @@
+Inheritance and Interface :
+Inheritance (Extends) digunakan untuk abstraksi dari paling umum ke detail
+Interface (Implements) adalah kontrak menggunakan sebuah aturan yang mengharuskan seluruh interface untuk di override apabila digunakan
